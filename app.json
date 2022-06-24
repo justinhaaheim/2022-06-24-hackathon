@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "outdoor-learning",
-    "slug": "outdoor-learning",
+    "name": "hackathon-2022-06-24",
+    "slug": "hackathon-2022-06-24",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -18,7 +18,7 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.github.jritch.flora"
+      "bundleIdentifier": "com.github.justinhaaheim.2022-06-24-hackathon"
     },
     "android": {
       "adaptiveIcon": {

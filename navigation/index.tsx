@@ -24,6 +24,7 @@ import JournalScreen from '../screens/JournalScreen';
 import SampleEucalyptusTreesScreen from '../screens/SampleEucalyptusTreesScreen';
 import appName from '../constants/appName';
 import DevIntroScreen from '../screens/DevIntroScreen';
+import HackPlaygroundScreen from '../screens/HackPlaygroundScreen';
 
 export default function Navigation({
   colorScheme,
@@ -58,6 +59,13 @@ function RootNavigator() {
         headerShown: false,
       }}
     >
+      <Stack.Screen
+        name="HackPlaygroundScreen"
+        component={HackPlaygroundScreen}
+        options={{
+          headerBackVisible: true,
+        }}
+      />
       {__DEV__ && (
         <Stack.Screen
           name="DevIntroScreen"
@@ -67,13 +75,6 @@ function RootNavigator() {
           }}
         />
       )}
-      <Stack.Screen
-        name="LessonIntroScreen"
-        component={LessonIntroScreen}
-        options={{
-          headerBackVisible: true,
-        }}
-      />
       <Stack.Screen name="LessonTabNavigator" component={LessonTabNavigator} />
       <Stack.Screen
         name="FindScanEucalyptusTreeScreen"
