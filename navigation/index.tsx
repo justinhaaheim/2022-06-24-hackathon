@@ -59,13 +59,6 @@ function RootNavigator() {
         headerShown: false,
       }}
     >
-      <Stack.Screen
-        name="HackPlaygroundScreen"
-        component={HackPlaygroundScreen}
-        options={{
-          headerBackVisible: true,
-        }}
-      />
       {__DEV__ && (
         <Stack.Screen
           name="DevIntroScreen"
@@ -75,6 +68,13 @@ function RootNavigator() {
           }}
         />
       )}
+      <Stack.Screen
+        name="HackPlaygroundScreen"
+        component={HackPlaygroundScreen}
+        options={{
+          headerBackVisible: true,
+        }}
+      />
       <Stack.Screen name="LessonTabNavigator" component={LessonTabNavigator} />
       <Stack.Screen
         name="FindScanEucalyptusTreeScreen"

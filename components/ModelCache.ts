@@ -2,12 +2,14 @@ import {MobileModel} from 'react-native-pytorch-core';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const MODEL_URLS: {[key: string]: string} = {
-  eucalyptusClassifier:
-    'https://github.com/jritch/outdoor-learning/releases/download/v0.0.1-alpha/classifier.ptl',
-  wav2vec:
-    'https://github.com/pytorch/live/releases/download/v0.1.0/wav2vec2.ptl',
-  bertQA:
-    'https://github.com/pytorch/live/releases/download/v0.1.0/bert_qa.ptl',
+  imageClassifier:
+    'https://github.com/pytorch/live/releases/download/v0.1.0/mobilenet_v3_small.ptl',
+  // eucalyptusClassifier:
+  //   'https://github.com/jritch/outdoor-learning/releases/download/v0.0.1-alpha/classifier.ptl',
+  // wav2vec:
+  //   'https://github.com/pytorch/live/releases/download/v0.1.0/wav2vec2.ptl',
+  // bertQA:
+  //   'https://github.com/pytorch/live/releases/download/v0.1.0/bert_qa.ptl',
 };
 
 const MODEL_PATH_KEY = 'model_path';

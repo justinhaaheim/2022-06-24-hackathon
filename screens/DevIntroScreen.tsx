@@ -40,6 +40,19 @@ export default function DevIntroScreen({
           <View style={styles.screensHeaderContainer}>
             <Text style={styles.screensHeader}>Screen Shortcuts</Text>
           </View>
+
+          {routeNames.map((routeName, index) => {
+            return (
+              <View style={styles.buttonWrapper} key={routeName ?? index}>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate(routeName)}
+                  style={styles.button}
+                >
+                  <Text style={styles.startButtonText}>{routeName}</Text>
+                </TouchableOpacity>
+              </View>
+            );
+          })}
           {elements.map((element, index) => {
             return (
               <View style={styles.buttonWrapper} key={index}>
@@ -54,18 +67,6 @@ export default function DevIntroScreen({
                   <Text
                     style={styles.startButtonText}
                   >{`Lesson ID: ${index} ${element.__type}`}</Text>
-                </TouchableOpacity>
-              </View>
-            );
-          })}
-          {routeNames.map((routeName, index) => {
-            return (
-              <View style={styles.buttonWrapper} key={routeName ?? index}>
-                <TouchableOpacity
-                  onPress={() => navigation.navigate(routeName)}
-                  style={styles.button}
-                >
-                  <Text style={styles.startButtonText}>{routeName}</Text>
                 </TouchableOpacity>
               </View>
             );

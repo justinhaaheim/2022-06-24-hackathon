@@ -30,10 +30,10 @@ checkForPytorchCoreLib();
 export default function App() {
   // Cache all models required by the app
   useEffect(() => {
-    ModelCache.clearModelCache().then(() => {
-      console.log('Model Cache cleared!');
-      ModelCache.downloadAllModels().catch(console.error);
-    });
+    // ModelCache.clearModelCache().then(() => {
+    //   console.log('Model Cache cleared!');
+    ModelCache.downloadAllModels().catch(console.error);
+    // });
   }, []);
 
   const isLoadingComplete = useCachedResources();
@@ -46,10 +46,12 @@ export default function App() {
     return null;
   } else {
     return (
+      // <React.StrictMode>
       <SafeAreaProvider>
         <Navigation colorScheme={colorScheme} />
         <StatusBar />
       </SafeAreaProvider>
+      // </React.StrictMode>
     );
   }
 }
