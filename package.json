@@ -1,0 +1,72 @@
+{
+  "name": "outdoor-learning",
+  "version": "0.1.0",
+  "engines": {
+    "npm": ">=8.2.3",
+    "yarn": ">=1"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "test": "jest --watchAll",
+    "tsc": "tsc --noEmit",
+    "prettier": "prettier --write .",
+    "prettier-check": "prettier --check .",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-fix": "npm run lint -- --fix",
+    "prepare": "husky install"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^12.0.0",
+    "@react-native-async-storage/async-storage": "~1.15.0",
+    "@react-navigation/bottom-tabs": "^6.0.5",
+    "@react-navigation/native": "^6.0.2",
+    "@react-navigation/native-stack": "^6.1.0",
+    "expo": "~44.0.0",
+    "expo-asset": "~8.4.4",
+    "expo-camera": "~12.1.2",
+    "expo-constants": "~13.0.0",
+    "expo-dev-client": "~0.8.6",
+    "expo-file-system": "~13.1.4",
+    "expo-font": "~10.0.4",
+    "expo-linking": "~3.0.0",
+    "expo-speech": "~10.1.0",
+    "expo-splash-screen": "~0.14.0",
+    "expo-status-bar": "~1.2.0",
+    "expo-web-browser": "~10.1.0",
+    "lodash.throttle": "^4.1.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-pytorch-core": "0.0.0-05302022-1203-571060ee6",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "~3.10.1",
+    "react-native-web": "0.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@types/lodash.throttle": "^4.1.7",
+    "@types/react": "^17.0.44",
+    "@types/react-native": "~0.64.12",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "husky": "^7.0.4",
+    "jest": "^26.6.3",
+    "jest-expo": "~44.0.1",
+    "lint-staged": "^12.4.0",
+    "prettier": "^2.6.2",
+    "react-test-renderer": "17.0.1",
+    "typescript": "~4.3.5"
+  },
+  "private": true
+}
