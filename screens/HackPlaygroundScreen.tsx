@@ -11,36 +11,16 @@ import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import globalStyles from '../constants/globalStyles';
 
-export default function HackPlaygroundScreen({
-  navigation,
-}: NativeStackScreenProps<RootStackParamList, 'HackPlaygroundScreen'>) {
-  const textContent =
-    'Depending on who you ask, eucalyptus trees in the Bay Area are either a fire-prone blight on the landscape or an essential piece of California’s natural heritage. Let’s find out why! It will take approximately 10 mins to complete the lesson. Turn up the volume to listen to the narration through audio.';
-
+export default function HackPlaygroundScreen({}: NativeStackScreenProps<
+  RootStackParamList,
+  'HackPlaygroundScreen'
+>) {
   return (
     <SafeAreaView
       style={[styles.mainContainer, globalStyles.androidExtraSafeAreaPadding]}
     >
       <View style={styles.headingSection}>
         <Text style={styles.headingText}>Hack Playground Screen</Text>
-      </View>
-      <View style={styles.normalTextSection}>
-        <Text style={styles.normalText}>{textContent}</Text>
-      </View>
-      <View style={styles.imageSection}>
-        <ImageBackground
-          source={require('../assets/images/GettyImages-a0052-000570.jpeg')}
-          resizeMode="cover"
-          style={styles.image}
-        />
-      </View>
-      <View style={styles.buttonPosition}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('LessonTabNavigator')}
-          style={styles.button}
-        >
-          <Text style={styles.startButtonText}>{'START'}</Text>
-        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
