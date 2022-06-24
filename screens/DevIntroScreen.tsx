@@ -27,7 +27,7 @@ export default function DevIntroScreen({
       <ScrollView>
         <View style={styles.mainContainer}>
           <View style={styles.headingContainer}>
-            <Text style={styles.headingText}>[DEV] Flora Dev Screen</Text>
+            <Text style={styles.headingText}>[DEV] Dev Landing Screen</Text>
           </View>
           <View style={styles.buttonWrapper}>
             <TouchableOpacity

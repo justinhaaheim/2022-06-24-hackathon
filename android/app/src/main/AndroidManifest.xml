@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.github.jritch.flora">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.github.justinhaaheim.hackathon20220624">
   <uses-permission android:name="android.permission.CAMERA"/>
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -32,6 +32,7 @@
         <data android:scheme="com.github.jritch.flora"/>
         <data android:scheme="exp+outdoor-learning"/>
         <data android:scheme="exp+hackathon-2022-06-24"/>
+        <data android:scheme="com.github.justinhaaheim.hackathon20220624"/>
       </intent-filter>
     </activity>
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>

@@ -1,4 +1,4 @@
-package com.github.jritch.flora;
+package com.github.justinhaaheim.hackathon20220624;
 import expo.modules.devlauncher.DevLauncherController;
 
 import android.app.Application;
@@ -89,7 +89,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.github.jritch.flora.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("com.github.justinhaaheim.hackathon20220624.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

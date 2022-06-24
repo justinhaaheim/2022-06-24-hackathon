@@ -1,4 +1,4 @@
-package com.github.jritch.flora;
+package com.github.justinhaaheim.hackathon20220624;
 import expo.modules.devmenu.react.DevMenuAwareReactActivity;
 import android.content.Intent;
 import expo.modules.devlauncher.DevLauncherController;

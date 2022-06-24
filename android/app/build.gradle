@@ -152,7 +152,7 @@ android {
     }
 
     defaultConfig {
-        applicationId 'com.github.jritch.flora'
+        applicationId 'com.github.justinhaaheim.hackathon20220624'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
