@@ -328,8 +328,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.jritch.flora;
-				PRODUCT_NAME = outdoorlearning;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.justinhaaheim.2022-06-24-hackathon";
+				PRODUCT_NAME = "hackathon20220624";
 				SWIFT_OBJC_BRIDGING_HEADER = "outdoorlearning/outdoorlearning-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -355,8 +355,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.jritch.flora;
-				PRODUCT_NAME = outdoorlearning;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.justinhaaheim.2022-06-24-hackathon";
+				PRODUCT_NAME = "hackathon20220624";
 				SWIFT_OBJC_BRIDGING_HEADER = "outdoorlearning/outdoorlearning-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

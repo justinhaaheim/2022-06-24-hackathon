@@ -5,7 +5,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>outdoor-learning</string>
+    <string>hackathon-2022-06-24</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -26,13 +26,13 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>myapp</string>
-          <string>com.github.jritch.flora</string>
+          <string>com.github.justinhaaheim.2022-06-24-hackathon</string>
         </array>
       </dict>
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>exp+outdoor-learning</string>
+          <string>exp+hackathon-2022-06-24</string>
         </array>
       </dict>
     </array>
